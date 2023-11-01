@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Application</title>
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/logomb.png" alt="logo" />
+      </div>
+      <div class="btnLng">
+        <div class="btn">
+          <a href="https://meridianbet.be/en/sign-up" target="_blank"
+            >Register</a
+          >
+          <a href="https://meridianbet.be/en/betting" target="_blank">Login</a>
+        </div>
+        <div class="lang-switcher">
+          <a class="lang-en" id="lang-link" href="#">
+            <img id="flag-img" src="img/en.svg" alt="Flag" />
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a
+                class="lang-rs"
+                href="#"
+                data-lang="nl"
+                data-image="./img/nl.svg"
+              >
+                <img src="./img/nl.svg" alt="srpski" />
+              </a>
+            </li>
+            <li>
+              <a
+                class="lang-en"
+                href="#"
+                data-lang="en"
+                data-image="img/en.svg"
+              >
+                <img src="img/en.svg" alt="English" />
+              </a>
+            </li>
+            <li>
+              <a
+                class="lang-en"
+                href="#"
+                data-lang="fr"
+                data-image="img/fr.svg"
+              >
+                <img src="img/fr.svg" alt="English" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="content"></div>
+      </div>
+    </header>
+    <main>
+      <section id="meridianApp">
+        <div class="meridianApp-wrapper">
+          <div class="meridianApp-text">
+            <h4>Play smart, win big</h4>
+            <h2>Download the MERIDIANBET App!</h2>
+          </div>
+          <div class="meridianApp-img">
+            <div class="meridianApp-img-box1 box">
+              <p>Android</p>
+              <img
+                class="box-img"
+                src="./img/Android_App_BE.png"
+                alt="qrCode"
+              />
+              <div class="btn-app">
+                <img
+                  class="btn-icon"
+                  src="./img/androidIcon.png"
+                  alt="androidIcon"
+                />
+                <a
+                  href="https://coupons.joker.co.rs/~android/be/app-be-release.apk"
+                  >Download</a
+                >
+              </div>
+            </div>
+            <div class="meridianApp-img-box2 box">
+              <p>iOS</p>
+              <img class="box-img" src="./img/iOS_App_BE.png" alt="qrCode" />
+              <div class="btn-app">
+                <img
+                  class="btn-icon"
+                  src="./img/appleIcon.png"
+                  alt="appleIcon"
+                />
+                <a href="https://itunes.apple.com/be/app/id1223008241"
+                  >Download</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="instructions">
+        <div class="instructions-wrapper">
+          <h3>How do I download the app on Android?</h3>
+          <ul>
+            <li>Browse the mobile options and go to "Settings".</li>
+            <li>
+              Click on "Advanced Settings" (this varies depending on your
+              Smartphone).
+            </li>
+            <li>Activate "Unknown Sources"</li>
+            <li>Confirm your choice by clicking on "OK".</li>
+            <li>Open the internet browser and go to "www.meridianbet.be"</li>
+            <li>
+              You will see the screen "Download our Android Application". Click
+              on "Android"
+            </li>
+            <li>
+              If you do not see this screen: go to "Menu" > bottom > "Mobile
+              applications" > bottom > "Download Android"
+            </li>
+            <li>Click on "Download"</li>
+            <li>Browse your downloads.</li>
+            <li>Click on "app-be-release.apk"</li>
+            <li>Install the Meridianbet.be app on your mobile.</li>
+            <li>
+              Congratulations, the app is now successfully installed on your
+              mobile. You can now register or log in.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="payments">
+          <div class="payments-text">
+            <h3>Payment methods</h3>
+            <h4>Partners we trust</h4>
+          </div>
+          <div class="payments-icons">
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/payments/bancontact.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/payments/ideal.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/payments/belfius.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/payments/ing.svg" alt="" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/payments/skrill.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/payments/sofort.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/payments/hipay.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/payments/neteller.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/payments/paypal.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/payments/paysafe.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sponsorships">
+          <div class="sponsorships-text">
+            <h3>Sponsorships</h3>
+            <h4>We support sport and fair play</h4>
+          </div>
+          <div class="sponsorships-icons">
+            <div class="swiper-container mySwiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/zvezda.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/aek.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/CD_Costa_do_Sol.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/clf.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/GomjenicaPrijedor.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/Gorazde.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/Rekreativo-Banja-Luka.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/Zvijezda.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/ZvijezdaKakmuz.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/zeljeznicar-doboj.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/FMP-logo-bez-pozadine.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/fudbalski_savez_crne_gore.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/Jogabet-liga-de-Maputo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/PromoDonjiVakuf.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/Varda.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/KMCFC.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/RMU-Banovici.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/mladostBulldogs.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/munchen.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/napredak.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/nea.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/ribnica.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/Sloboda_Tuzla.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/sutjeska.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/valleta.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/vps.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/zabar.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <ul class="lista">
+          <li>
+            <a
+              href="https://help.meridianbet.be/en/category/1171/page/10471"
+              target="_blank"
+              >Terms &amp; Conditions</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://help.meridianbet.be/en/category/1171/page/10470"
+              target="_blank"
+              >Rule book</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://help.meridianbet.be/en/category/1171/page/10466"
+              target="_blank"
+              >Responsible gaming</a
+            >
+          </li>
+
+          <li>
+            <a href="https://promo.meridianbet.be/en" target="_blank"
+              >Promotions</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.gamingcommission.be/opencms/opencms/jhksweb_en/protection/index.html"
+              target="_blank"
+              >Protection of Gamblers</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>
+          Meridianbet.be is operated by MyBestOdss bvba, a Belgian company with
+          company number 0838.859.661 registered on the address Mybestodds BV,
+          Drukpersstraat 4 1000 Brussel, Belgium. MyBestOdds bvba is licenced
+          and regulated by the Belgian Gaming Commission under licence number
+          FA+126361
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>

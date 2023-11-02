@@ -162,4 +162,6 @@ function redirectToApp() {
   }
 }
 
-redirectToApp();
+window.addEventListener("load", function() {
+  redirectToApp();
+});

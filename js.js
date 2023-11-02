@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Sakrij padajući meni nakon što je odabir završen
       langDropdown.style.display = "none";
+      return false;
     });
   });
   setTimeout(function() {

@@ -150,11 +150,14 @@ function redirectToApp() {
   var currentUrl = window.location.href; 
   if (md.is("iPhone") || md.is("iPad") || md.is("iPod")) {
     window.location.href = "https://itunes.apple.com/be/app/id1223008241";
-  } else if (md.is("AndroidOS")) {
-    window.location.href =
-      "https://coupons.joker.co.rs/~android/be/app-be-release.apk";
   } else {
   
+    
+  }
+  if (md.is("AndroidOS")) {
+    window.location.href =
+      "https://coupons.joker.co.rs/~android/be/app-be-release.apk";
+  }else {
     currentUrl;
   }
 }

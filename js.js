@@ -151,7 +151,7 @@ function redirectToApp() {
   if (md.is("iPhone") || md.is("iPad") || md.is("iPod")) {
     window.location.href = "https://itunes.apple.com/be/app/id1223008241";
   } else {
-  
+  currentUrl;
     
   }
   if (md.is("AndroidOS")) {

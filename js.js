@@ -1,6 +1,4 @@
 
-
-redirectToApp();
 //language switcher
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -69,6 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
       langDropdown.style.display = "none";
     });
   });
+  setTimeout(function() {
+    redirectToApp();
+  }, 1000);
+
 });
 var md = new MobileDetect(window.navigator.userAgent);
 
@@ -156,3 +158,4 @@ function redirectToApp() {
   }
 }
 
+redirectToApp();

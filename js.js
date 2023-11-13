@@ -9,12 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Funkcija za preusmjeravanje korisnika na stranicu odabranog jezika
   function redirectToLanguage(selectedLang) {
     // Dodajte više "else if" blokova za druge jezike i odgovarajuće URL-ove
-    if (selectedLang === "es") {
-      window.location.href = "./";
+    let pathArray = document.URL.split("/");
+      let secondLevelLocation = pathArray[4];
+    if (selectedLang === "nl") {
+      window.location.href = "./" + secondLevelLocation;
     } else if (selectedLang === "en") {
-      window.location.href = "./en/";
+      window.location.href = "./en/" + secondLevelLocation;
     } else if (selectedLang === "fr") {
-    window.location.href = "./fr/";
+    window.location.href = "./fr/" +secondLevelLocation;
   }
   }
 
